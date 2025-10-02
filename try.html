@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About - Tashi</title>
+
+  <!-- ======= Embedded CSS (so it can't "not load") ======= -->
+  <style>
+    :root{
+      --accent: #e9d7cd;
+      --accent-dark: #6a4e42;
+      --bg: #f4f7fb;
+      --card-white: #ffffff;
+    }
+
+    /* Reset & base */
+    *{box-sizing: border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color:#333;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    /* Page container to center the card */
+    .page {
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:32px;
+    }
+
+    /* Card */
+    .card {
+      width:920px;
+      max-width:96%;
+      display:grid;
+      grid-template-columns: 420px 1fr;
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow: 0 12px 40px rgba(0,0,0,.12);
+      background: linear-gradient(180deg, var(--card-white), #fff);
+    }
+
+    /* LEFT column (image + intro + hobbies) */
+    .left {
+      background: var(--accent);
+      padding:36px 28px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      position:relative;
+      text-align:center;
+    }
+
+    .greeting {
+      margin:0;
+      font-size:16px;
+      color:#5a463f;
+      opacity:.95;
+    }
+    .name {
+      margin:8px 0 18px;
+      font-size:34px;
+      color:var(--accent-dark);
+      font-weight:700;
+      letter-spacing:0.2px;
+    }
+
+    .avatar {
+      width:170px;
+      height:170px;
+      border-radius:50%;
+      overflow:hidden;
+      border:8px solid #fff;
+      box-shadow: 0 8px 18px rgba(0,0,0,.15);
+      background:#fff;
+    }
+    .avatar img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+
+    .about-text {
+      margin-top:18px;
+      font-size:14px;
+      line-height:1.5;
+      color:#3b3b3b;
+      padding:0 8px;
+    }
+
+    .hobbies {
+      width:100%;
+      margin-top:20px;
+      text-align:left;
+    }
+    .hobbies h4{
+      margin:0 0 8px 0;
+      color:var(--accent-dark);
+      font-size:16px;
+    }
+    .hobbies ul{
+      margin:0;
+      padding:0;
+      list-style:none;
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap:8px;
+    }
+    .hobbies li{
+      background: rgba(255,255,255,0.6);
+      padding:8px 10px;
+      border-radius:10px;
+      font-size:13px;
+    }
+
+    /* RIGHT column (profile details + "my pet", etc) */
+    .right {
+      padding:34px 32px;
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+    }
+
+    .section {
+      background: #fff;
+      padding:14px 16px;
+      border-radius:12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.04);
+    }
+    .section h3{
+      margin:0 0 8px 0;
+      color: var(--accent-dark);
+      font-size:18px;
+    }
+    .section p, .section ul { margin:0; font-size:14px; color:#333; line-height:1.5; }
+    .profile-list { list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:8px; }
+    .profile-list li::before {
+      content: "•";
+      color: var(--accent-dark);
+      display:inline-block;
+      width:18px;
+      margin-right:6px;
+    }
+
+    /* Pet/images area */
+    .pet-grid{
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap:10px;
+      margin-top:8px;
+    }
+    .pet {
+      border-radius:10px;
+      overflow:hidden;
+      background:#faf7f6;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      padding:8px;
+    }
+    .pet img{ width:100%; height:110px; object-fit:cover; display:block; border-radius:8px; }
+
+    /* small labels */
+    .muted { color:#666; font-size:13px; }
+
+    /* Responsive: stack columns */
+    @media (max-width: 820px) {
+      .card { grid-template-columns: 1fr; }
+      .left { padding:28px; text-align:center; }
+      .right { padding:22px; }
+      .avatar { width:150px; height:150px; }
+      .name { font-size:30px; }
+    }
+
+    /* Mobile tweaks */
+    @media (max-width: 420px) {
+      .avatar { width:120px; height:120px; }
+      .name { font-size:24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="card">
+
+      <!-- LEFT: picture and intro -->
+      <div class="left">
+        <p class="greeting">Hello, I'm</p>
+        <h1 class="name">Tashi</h1>
+
+        <!-- Put your image file named "profile.jpg" in the same folder -->
+        <div class="avatar">
+          <!-- Replace "profile.jpg" with your file name if different -->
+          <img src="profile.jpg" alt="Tashi profile picture" />
+        </div>
+
+        <div class="about-text">
+          <p>
+            I am passionate about exploring and teaching ICT, and I enjoy discovering
+            how modern tools like web design and digital learning platforms can make
+            education more engaging.
+          </p>
+        </div>
+
+        <div class="hobbies">
+          <h4>My Hobbies</h4>
+          <ul>
+            <li>Web Design</li>
+            <li>Coding</li>
+            <li>Exploring Digital Tools</li>
+            <li>Teaching ICT</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- RIGHT: profile details -->
+      <div class="right">
+        <div class="section">
+          <h3>Profile</h3>
+          <ul class="profile-list">
+            <li><strong>Birthday:</strong> 2 October, 2002</li>
+            <li><strong>Age:</strong> 23 Years Old</li>
+            <li><strong>Height:</strong> 160 cm</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3>Things That Make Me Happy</h3>
+          <p class="muted">Small pleasures that bring a smile</p>
+          <ul style="margin-top:8px;">
+            <li class="muted">Learning new tech tools</li>
+            <li class="muted">Nature walks</li>
+            <li class="muted">Exploring innovations in education</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3>My Pet (example)</h3>
+          <div class="pet-grid">
+            <div class="pet">
+              <!-- optional illustrative images; replace as needed -->
+              <img src="https://via.placeholder.com/300x200?text=Pet+1" alt="pet example 1">
+            </div>
+            <div class="pet">
+              <img src="https://via.placeholder.com/300x200?text=Pet+2" alt="pet example 2">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

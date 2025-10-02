@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Tashi Yangzom</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="Logo.png" alt="Tashi Yangzom Logo">
+        <span>MyPortfolio</span>
+      </div>
+
+      <!-- Nav Links -->
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <!-- Dark Mode Button -->
+      <button class="dark-toggle">🌙 Dark Mode</button>
+
+      <!-- Hamburger Menu -->
+      <div class="hamburger">☰</div>
+    </nav>
+  </header>
+
+  <!-- PROJECTS SECTION -->
+  <section class="projects-section">
+    <div class="projects-container">
+      <h2>📂 My Projects</h2>
+      <p class="project-intro">
+        Here are some of the projects I have worked on during my learning journey.
+      </p>
+
+      <!-- Filter Buttons -->
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="ict">ICT</button>
+        <button class="filter-btn" data-filter="database">Database</button>
+      </div>
+
+      <!-- Project Grid -->
+      <div class="project-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card" data-category="web">
+          <img src="HTML_projects.jpg" alt="Web Portfolio Project">
+          <h3>Portfolio Website</h3>
+          <p class="short-desc">A personal portfolio built with HTML, CSS, and JavaScript.</p>
+          <p class="more-text hidden">
+            This project showcases my skills, education, and projects. It includes DOM manipulation like dark mode, search filter, and dynamic greetings.
+          </p>
+          <button class="toggle-btn">Read More</button>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-category="ict">
+          <img src="pythonquiz.jpg" alt="ICT Teaching Tools">
+          <h3>ICT Teaching Tools</h3>
+          <p class="short-desc">Digital resources for engaging classroom learning.</p>
+          <p class="more-text hidden">
+            Created interactive lesson materials and quizzes using online tools to make ICT teaching more fun and student-centered.
+          </p>
+          <button class="toggle-btn">Read More</button>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-category="database">
+          <img src="Databaseproject.jpg" alt="Database Mini Project">
+          <h3>Database Project</h3>
+          <p class="short-desc">A small database project using SQL.</p>
+          <p class="more-text hidden">
+            Designed a simple student record system with CRUD operations using SQL queries, helping me understand data storage better.
+          </p>
+          <button class="toggle-btn">Read More</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+ <!-- FOOTER -->
+<footer>
+  <p>© <span id="year"></span> Tashi Yangzom | All Rights Reserved</p>
+</footer>
+
+
+  <!-- Link External JS -->
+  <script src="script.js" defer></script>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn">⬆</button>
+
+</body>
+</html>

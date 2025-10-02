@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Tashi Yangzom</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="Logo.png" alt="Tashi Yangzom Logo">
+        <span>MyPortfolio</span>
+      </div>
+
+      <!-- Nav Links -->
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+
+      <!-- Dark Mode Button -->
+      <button class="dark-toggle">🌙 Dark Mode</button>
+
+      <!-- Hamburger Menu -->
+      <div class="hamburger">☰</div>
+    </nav>
+  </header>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <div class="contact-container">
+
+      <!-- Left Side -->
+      <div class="contact-image">
+        <img src="Logo.png" alt="My Logo">
+      </div>
+
+      <!-- Right Side -->
+      <div class="contact-info">
+        <h2>✨ Let’s Connect</h2>
+        <p>
+          I’d love to hear from you! Whether it’s about <strong>ICT, teaching</strong>, or new projects,
+          feel free to reach out.
+        </p>
+
+        <!-- Contact Cards -->
+        <div class="contact-cards">
+          <div class="card">
+            <img src="email.jpg" alt="Email">
+            <p>08230213.sce@rub.edu.bt</p>
+          </div>
+          <div class="card">
+            <img src="phone.png" alt="Phone">
+            <p>+975-17470053</p>
+          </div>
+          <div class="card">
+            <img src="HTML.png" alt="GitHub">
+            <p><a href="https://github.com/YourGitHub" target="_blank">github.com/YourGitHub</a></p>
+          </div>
+        </div>
+
+        <!-- Contact Buttons -->
+        <div class="contact-buttons">
+          <a href="mailto:08230213.sce@rub.edu.bt" class="contact-btn">📩 Email</a>
+          <a href="https://wa.me/97517470053" class="contact-btn" target="_blank">WhatsApp</a>
+          <a href="https://t.me/yourTelegram" class="contact-btn" target="_blank">Telegram</a>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          
+          <!-- ✅ Message Box with Character Counter -->
+          <textarea id="message" rows="5" placeholder="Your Message" maxlength="300" required></textarea>
+          <p id="charCount">0 / 300 characters</p>
+          
+          <button type="submit">Send Message</button>
+        </form>
+
+        <!-- Map -->
+        <div class="map-container">
+          <h3>📍 Samtse College of Education</h3>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3492.967126!2d89.100700!3d26.899000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8b8e18a9d5b7b%3A0xabcdef1234567890!2sSamtse%20College%20of%20Education!5e0!3m2!1sen!2sbt!4v1690000000000!5m2!1sen!2sbt"
+            allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+<footer>
+  <p>© <span id="year"></span> Tashi Yangzom | All Rights Reserved</p>
+</footer>
+
+
+  <!-- Link External JS -->
+  <script src="script.js" defer></script>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn">⬆</button>
+
+</body>
+</html>

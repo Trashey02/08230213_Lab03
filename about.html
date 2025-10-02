@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Tashi Yangzom</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Hidden by default */
+    .hidden {
+      display: none;
+    }
+    /* Smooth fade-in effect */
+    .fade {
+      animation: fadeIn 0.6s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="Logo.png" alt="Tashi Yangzom Logo">
+        <span>MyPortfolio</span>
+      </div>
+
+      <!-- Nav Links -->
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <!-- Dark Mode Button -->
+      <button class="dark-toggle">🌙 Dark Mode</button>
+
+      <!-- Hamburger Menu (mobile) -->
+      <div class="hamburger">☰</div>
+    </nav>
+  </header>
+
+  <!-- ABOUT PAGE CONTENT -->
+  <main class="page">
+    <div class="card-about">
+      
+      <!-- LEFT SIDE -->
+      <div class="left">
+        <p class="greeting">Hello, I’m</p>
+        <h1 class="name">Tashi</h1>
+        <div class="avatar">
+          <img src="mprofile.jpg" alt="Tashi Profile">
+        </div>
+        <p class="about-text">
+          Passionate about exploring and teaching ICT.  
+          I love discovering how modern tools like web design and digital 
+          learning platforms can make education more engaging.
+        </p>
+
+        <!-- ✅ See More Button -->
+        <button id="seeMoreBtn" class="btn-contact">See More</button>
+      </div>
+
+      <!-- RIGHT SIDE (Hidden initially) -->
+      <div class="right hidden" id="extraContent">
+        <div class="section fade">
+          <h3>💡 About Me</h3>
+          <p>
+            I believe in the power of digital learning to transform classrooms.  
+            My goal is to build creative solutions that inspire curiosity and growth.
+          </p>
+        </div>
+
+        <div class="section fade">
+          <h3>🎨 Hobbies</h3>
+          <ul class="profile-list">
+            <li>Web Design</li>
+            <li>Coding</li>
+            <li>Exploring Digital Tools</li>
+            <li>Teaching ICT</li>
+          </ul>
+        </div>
+
+        <div class="section fade">
+          <h3>🌟 Things That Make Me Happy</h3>
+          <ul class="profile-list">
+            <li>Learning new tech tools</li>
+            <li>Nature walks</li>
+            <li>Exploring innovations in education</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© <span id="year"></span> Tashi Yangzom | All Rights Reserved</p>
+  </footer>
+
+  <!-- ✅ Scroll to Top Button -->
+  <button id="scrollTopBtn">⬆</button>
+
+  <!-- Link External JS -->
+  <script src="script.js" defer></script>
+</body>
+</html>

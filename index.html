@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tashi Yangzom - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="Logo.png" alt="Tashi Yangzom Logo" />
+        <span>MyPortfolio</span>
+      </div>
+
+      <!-- Nav Links -->
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <!-- Dark Mode Toggle -->
+      <button class="dark-toggle">🌙 Dark Mode</button>
+
+      <!-- Hamburger Menu -->
+      <div class="hamburger">☰</div>
+    </nav>
+  </header>
+
+  <!-- Profile Card Section -->
+  <section class="profile-card">
+    <div class="card">
+      <div class="top-section">
+        <!-- Text Section -->
+        <div class="text-side">
+          <h2>Hello, I'm <span>Tashi Yangzom</span></h2>
+          <p class="tagline">B.Ed Student | Passionate about teaching and exploring new things on ICT subject</p>
+          <p class="mission">
+            I love exploring how <b>technology</b> can transform learning, and my goal is to create
+            <i>engaging and interactive educational experiences</i>.
+          </p>
+
+          <!-- ✅ Dynamic Greeting Placeholder -->
+          <div id="greeting"></div>
+        </div>
+
+        <!-- Profile Image -->
+        <div class="image-side">
+          <img src="Profile.jpg" alt="Tashi Yangzom" />
+        </div>
+      </div>
+
+      <!-- Info Boxes -->
+      <div class="info-sections">
+        <!-- About Me -->
+        <div class="info-box">
+          <h3>About Me</h3>
+          <p class="short-text">I'm a passionate educator-in-training with a focus on using technology to enhance classroom learning.</p>
+          <p class="more-text hidden">I aim to combine innovative digital tools with creative teaching methods to make learning more interactive and engaging for students.</p>
+          <button class="toggle-btn">See More</button>
+        </div>
+
+        <!-- My Hobby -->
+        <div class="info-box">
+          <h3>My Hobby</h3>
+          <p class="short-text">I enjoy photography, exploring nature, and discovering new digital tools that make teaching exciting.</p>
+          <p class="more-text hidden">I also experiment with web design, coding small projects, and capturing nature through my camera to inspire creativity in education.</p>
+          <button class="toggle-btn">See More</button>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="buttons">
+        <a href="projects.html" class="btn">Explore Projects</a>
+        <a href="Tashi_Resume.pdf" class="btn-outline" download>Download Resume</a>
+        <a href="contact.html" class="btn-contact">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© <span id="year"></span> Tashi Yangzom | All Rights Reserved</p>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn">⬆</button>
+
+  <!-- Link to external JS -->
+  <script src="script.js" defer></script>
+
+</body>
+</html>
